@@ -115,7 +115,8 @@ spec:
           value: curl -O https://dl.fbaipublicfiles.com/detectron2/COCO-Detection/retinanet_R_101_FPN_3x/190397697/model_final_971ab9.pkl
         - kind: RUN
           value: ln -s /usr/bin/pip3 /usr/local/bin/pip
-
+        - kind: RUN
+          value: ln -s /usr/bin/python3 /usr/local/bin/python
   triggers:
     myHttpTrigger:
       maxWorkers: 2

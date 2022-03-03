@@ -41,6 +41,8 @@ spec:
         - kind: RUN
           value: git clone https://github.com/foolwood/SiamMask.git
         - kind: RUN
+          value: sed -i '/torch==0.4.1/d' SiamMask/requirements.txt
+        - kind: RUN
           value: pip install -r SiamMask/requirements.txt jsonpickle
         - kind: RUN
           value: conda install -y gcc_linux-64
